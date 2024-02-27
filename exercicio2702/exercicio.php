@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
   $nome = $_GET['nome'];  
-=======
-    $nome = $_GET['nome'];  
->>>>>>> ffac726d9693e22c0e709495656513f3263e36ce
   $idade = $_GET['idade'];  
   $salario = $_GET['salario'];
   $INSS = 0;
@@ -46,11 +42,5 @@
     $IRPF = ($salario-$INSS) * 0.275 - 896.00;
   }
 
-  %Liq = $salario - $INSS - $IRPF;
-  echo "Cliente.".$name."seu salário bruto é de ".$salario." você pagará R$: ".number_format($INSS, 2, '.', ''). "de INSS e R$".number_format($IRPF, 2, '.', ''). "de IRPF".PHP_EOL;
-  
-<<<<<<< HEAD
-?>
-=======
-?>
->>>>>>> ffac726d9693e22c0e709495656513f3263e36ce
+  $Liq = $salario - $INSS - $IRPF;
+  echo "Cliente.".$nome."seu salário bruto é de ".$salario." você pagará R$: ".number_format($INSS, 2, '.', ''). "de INSS e R$".number_format($IRPF, 2, '.', ''). "de IRPF".PHP_EOL;
