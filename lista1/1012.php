@@ -1,7 +1,5 @@
 <?php
-$a = round(fgets(STDIN), 1);
-$b = round(fgets(STDIN), 1);
-$c = round(fgets(STDIN), 1);
+list($a, $b, $c) = array_map('floatval', explode(' ', fgets(STDIN)));
 $pi = 3.14159;
 $areatriangulo = ($a * $c)/2;
 $areacirculo = $pi * pow($c,2);
